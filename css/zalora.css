@@ -146,6 +146,24 @@ header .cart span{
 	width: 27px;
     height: 24px;
     background-position: -630px 0;
+    position: relative;
+}
+
+header .cart .count {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: relative;
+    right: 0px;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    display: none;
+}
+
+header .cart .count.show {
+    display: inline;
 }
 
 .product {

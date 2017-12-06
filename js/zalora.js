@@ -12,6 +12,7 @@ $(document).ready(function() {
 			// if value is not selected remove the add to card option
 			if (!val) {
 				$('#addCart').removeClass('added success');
+				updateCartCount();
 			}
 			// if the button is triggered and the value is selected do the add to card
 			if (isButtonTriggered && val) {
@@ -34,7 +35,17 @@ $(document).ready(function() {
 			$(this).toggleClass('added');
 			$(this).toggleClass('success');	
 		}
-		
+		updateCartCount();		
 	})
+
+	function updateCartCount() {
+
+		if ($('#addCart').hasClass('added')) {
+			$('#cartCount').addClass('show');
+		} else {
+			$('#cartCount').removeClass('show');
+		}
+		
+	}
 
 })
