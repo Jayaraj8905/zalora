@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zalora</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="full-screen" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<link rel="stylesheet" type="text/css" href="css/zalora.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" media="all">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="fixhead">
+				<div class="lfloat">
+					<div class="navbar lfloat">
+						<span class="navicon top"></span>
+						<span class="navicon middle"></span>
+						<span class="navicon bottom"></span>
+					</div>
+					<a class="search lfloat">
+						<span></span>
+					</a>
+				</div>
+				<div class="logo">
+					<span></span>
+				</div>
+				<div class="rfloat">
+					<a class="wishlist lfloat">
+						<span></span>
+					</a>
+					<a class="cart lfloat">
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="product">
+			<div class="banner">
+			<img src="images/levis-2307-622267-1.jpg">
+			</div>
+			<div class="product-title">
+				<div class="centered">
+					<h1>18% Off, use OCTPAYDAY (Min S$80)</h1>
+				</div>
+			</div>
+			<div class="product-desc">
+				<div class="centered">
+					<p>Studded Strap Block Heels</p>
+					<p>Something Borrowed</p>
+				</div>
+			</div>
+
+			<div class="product-price">
+				<div class="centered">
+					<span class="alert">24.90 SGD</span>
+					<span class="strike">124.90 SGD</span>
+				</div>
+			</div>
+
+			<div class="product-status">
+				<div class="centered">
+					<span class="success">In stock</span>
+				</div>
+			</div>
+
+			<div class="product-config">
+				<div class="centered">
+					<label>Size</label>
+					<select id="selectSizeType">
+						<option value="US">US</option>
+						<option value="EU">EU</option>
+					</select>
+					<select id="selectSize">
+						<option value="">Size</option>
+						<option value="32">32</option>
+						<option value="28">28</option>
+						<option value="26">26</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="actions cart">
+				<button class="btn primary action stretch uppercase" id="addCart">
+					<i class="tick draw"></i>
+					<span class="to-add-text">Add to Bag</span>
+					<span class="added-text">Added to Bag</span>
+				</button>
+			</div>
+
+			<div class="actions wishlist">
+				<button class="btn action stretch uppercase">
+				<i></i>
+				Add to Wishlist</button>
+			</div>
+
+			<div class="product-delivery">
+				<div class="centered uppercase">
+					<p>Delivered by <span class="success">6th to 8th November</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/zalora.js"></script>
+</body>
+</html>

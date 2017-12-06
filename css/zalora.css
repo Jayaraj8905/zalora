@@ -1,0 +1,269 @@
+html, body, button, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+:focus {
+	outline: none;
+}
+
+body {
+	background-color: #ebebeb;
+    color: #4f4f4f;
+    font-family: Arial,Helvetica;
+    font-size: 14px;
+    line-height: 22px;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: .75px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.btn {
+    letter-spacing: .75px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn.primary {
+	color: #fff;
+    background-color: #000;
+    border: 0;
+}
+
+.btn i {
+	top: 8px;
+    position: relative;
+}
+
+.btn.primary.success {
+    background-color: #00b09f;
+    color: #fff;
+}
+
+.btn.action {
+	font-size: 16px;
+    padding: 16px 0;
+}
+
+.btn.stretch {
+	width: 100%;
+}
+
+.lfloat {
+	float: left;
+}
+
+.rfloat {
+	float: right;
+}
+
+header .logo {
+	display: inline-block;
+}
+
+header .logo span, 
+header .search span, 
+header .wishlist span, 
+header .cart span,
+.btn i{
+	background-size: 2095px 90px;
+    background: url(../images/mobile_icons-sprite.svg);
+    display: inline-block;
+    margin: 2px 8px;
+}
+
+header .logo span{
+	width: 128px;
+    height: 30px;
+    background-position: -835px 0;
+}
+
+header {
+	width: 100%;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    height: 50px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+header .fixhead {
+	position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header  .navbar {
+	margin: 2px 8px;
+}
+
+header .navicon{
+	width: 25px;
+    height: 1px;
+    display: block;
+    border-radius: 1px;
+    background: #fff;
+    margin: 1px 0;
+}
+
+header .navicon.top{
+	margin-bottom: 6px;
+}
+
+header .navicon.bottom{
+	margin-top: 6px;
+}
+
+header .search span{
+	width: 27px;
+    height: 24px;
+    background-position: -1490px 0;
+}
+
+header .wishlist span{
+	width: 26px;
+    height: 24px;
+    background-position: -665px 0;
+}
+
+header .cart span{
+	width: 27px;
+    height: 24px;
+    background-position: -630px 0;
+}
+
+.product {
+	margin-top: 50px;
+}
+
+.product .product-title, 
+.product .product-desc, 
+.product .product-price, 
+.product .product-status,
+.product .product-config,
+.product .product-delivery,
+.product .actions {
+	padding: 8px 4px;
+}
+
+.product-title {
+	font-size: 18px;
+	font-weight: 400;
+	color: #FFFFFF;
+	background-color: #000;
+	margin-bottom: 8px;
+}
+
+.product .banner img{
+	width: 100%;
+}
+
+.product .alert {
+	color: #890000;
+}
+
+.product .success {
+	color: #00b09f;
+}
+
+.product .centered {
+	display: inline-block;
+    text-align: center;
+    width: 100%;	
+}
+
+.product .product-desc {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.product .product-config .ui-selectmenu-button {
+	width: 30%;
+	background-color: #FFFFFF;
+}
+
+.product .product-config select option {
+	background-color: #FFFFFF;
+}
+
+.product .cart .tick {
+	display: none;
+	margin-right: 40px;
+}
+
+.product .cart .added-text {
+	display: none;
+}
+
+.product .cart .added .tick, .product .cart .added .added-text {
+	display: inline;
+}
+
+.product .cart .added .to-add-text{
+	display: none;
+}
+
+.product .cart .tick.draw:after {
+    animation-duration: 800ms;
+    animation-timing-function: ease;
+    animation-name: checkmark;
+    transform: scaleX(-1) rotate(135deg);
+}
+
+.product .cart .tick:after {
+    opacity: 1;
+    height: 26px;
+    width: 15px;
+    transform-origin: left top;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    content: '';
+    position: absolute;
+}
+
+.product .wishlist i{
+	width: 23px;
+    height: 22px;
+    background-position: -570px 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}	
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 15px;
+    opacity: 1;
+  }
+  40% {
+    height: 26px;
+    width: 15px;
+    opacity: 1;
+  }
+  100% {
+    height: 26px;
+    width: 15px;
+    opacity: 1;
+  }
+}
